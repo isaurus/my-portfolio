@@ -1,0 +1,338 @@
+:root {
+    /* Tema Claro-Oscuro */
+    color-scheme: light dark;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    /* Variables */
+    --primary-color: #4FD1C5;
+    --primary-dark: #38B2AC;
+    --secondary-color: #805AD5;
+    --dark-bg: #101818;
+    --dark-card: #1A202C;
+    --dark-border: #2D3748;
+    --text-light: #E2E8F0;
+    --text-muted: #A0AEC0;
+    --white: #FFFFFF;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    line-height: 1.6;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Header */
+header {
+    /*background-color: orange;*/
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    /*background-color: #805AD5;*/
+
+    justify-content: center;    /* Alinea horizontalmente */
+    align-items: center;        /* Alinea verticalmente */
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.navlink {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.navlink:hover {
+    color: var(--primary-color);
+}
+/* Header */
+
+/* Estilos comunes */
+/* Estilos comunes para las <section> */
+section {
+    padding: 45px;  /* Añade espacios entre <section> */
+    /*background-color: #38B2AC;*/
+}
+
+/* Estilos comunes para los contenedores */
+.container {
+    /*background-color: #805AD5;*/
+
+    max-width: 800px;
+    display: flex;
+    margin: 0 auto;     /* Para centrarlo */
+}
+
+/* Estilos comunes para los <section-title> */
+.section-title {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos comunes para las píldoras 'tech-stack' */
+.tech-stack-items span {
+    background-color: var(--primary-color);
+
+    padding: 4px 16px;
+    border-radius: var(--border-radius);
+}
+
+.tech-stack-items {
+    /*background-color: #805AD5;*/
+
+    display: flex;
+    gap: 0.8rem;
+}
+/* Estilos comunes */
+
+/* Hero Section */
+.hero-container {
+    /*background-color: brown;*/
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 2rem;
+}
+
+.hero-left-container {
+    /*background-color: cadetblue;*/
+
+    display: flex;
+    align-items: center;
+}
+
+.profile-image-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--primary-color);
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-image-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.hero-right-container {
+    /*background-color: chocolate;*/
+
+    display: table-row;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social a {
+    background-color: var(--primary-color);
+    
+    padding: 8px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: var(--transition);
+}
+/* Hero Section */
+
+/* Experience */
+.experience-container {
+    /*background-color: brown;*/
+
+    width: 100%;
+    padding: 8px;
+}
+
+.experience-item {
+    background-color: #2D3748;
+
+    border: 4px solid var(--primary-color);
+    box-shadow: var(--shadow-lg);
+
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: var(--border-radius);
+
+    transition: var(--transition);
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.experience-item-title {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-date {
+    background-color: #805AD5;
+
+    font-size: 12px;
+    padding: 8px;
+    border-radius: var(--border-radius);
+}
+
+.experience-item-description {
+    text-align: justify;
+}
+
+.tech-stack h3 {
+
+}
+
+/* Experience */
+
+/* Projects */
+.projects-container {
+    /*background-color: brown;*/
+
+    width: 100%;
+    padding: 8px;
+}
+
+.project-item {
+    /*background-color: #2D3748;*/
+
+    display: flex;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 10px;
+    gap: 2rem;
+}
+
+.project-item-left {
+    /*background-color: #805AD5;*/
+}
+
+.project-image-wrapper {
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+
+    border: 4px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+}
+
+.project-image-wrapper:hover {
+    transform: scale(1.01);
+}
+
+.project-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+}
+
+.project-item-right {
+    /*background-color: #805AD5;*/
+
+    width: 100%;
+    display: table-row;
+    justify-content: center;
+}
+
+.project-item-description {
+    text-align: justify;
+}
+
+/* Projects */
+
+/* About */
+.about-container {
+    /*background-color: brown;*/
+
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    
+    gap: 1.5rem;
+}
+
+.about-container-left {
+    /*background-color: #805AD5;*/
+
+    text-align: justify;
+}
+
+.about-container-right {
+    /*background-color: #805AD5;*/
+
+    display: flex;
+    align-items: center;
+}
+
+.about-image-wrapper {
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+
+    border: 4px solid var(--primary-color);
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--border-radius);
+}
+
+.about-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* About */
+
+/* Contact */
+/* Contact */
+
+/* Footer */
+footer {
+    background-color: crimson;
+    padding: 25px;
+    text-align: center;
+}
+/* Footer */
+
+/* Responsive Design */
