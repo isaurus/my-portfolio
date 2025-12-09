@@ -9,7 +9,8 @@
 
     <title>Portfolio de Isaac | Fullstack Developer</title>
 
-    <link rel="icon" type="" href="" />
+    <link rel="icon" type="image/jpeg" href="./static/avatar.jpeg" />
+    
     <!-- ICONO DE PESTAÑA -->
     <link rel="alternate" href="https://isaacmartin.dev/en" hreflang="en" />
     <link rel="canonical" href="https://isaacmartin.dev" />
@@ -17,7 +18,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/styles.css" />
@@ -26,218 +27,180 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="navbar">
-            <nav class="nav-menu">
-                <a class="navlink" href="#experience">Experiencia</a>
-                <a class="navlink" href="#projects">Proyectos</a>
-                <a class="navlink" href="#about">Sobre mí</a>
-                <a class="navlink" href="#contact">Contacto</a>
-            </nav>
-        </div>
+        <span>ISAAC MARTÍN</span>
+        <nav>
+            <a class="navlink" href="#experience">EXPERIENCIA</a>
+            <a class="navlink" href="#projects">PROYECTOS</a>
+            <a class="navlink" href="#about">SOBRE MÍ</a>
+            <a class="navlink" href="#contact">CONTACTO</a>
+        </nav>
+        <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+            <img class="icon-sun" src="./static/sun-solid.png" alt="Modo claro">
+            <img class="icon-moon" src="./static/moon.png" alt="Modo oscuro">
+        </button>
     </header>
-    <!-- HEADER -->
 
-    <!-- HERO -->
-    <section>
-        <div class="container">
-            <div class="hero-container">
-                <div class="hero-left-container">
-                    <div class="profile-image-wrapper">
-                        <img src="./static/profile-pic.png" alt="" />
-                    </div>
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Isaac Martín</h1>
+                <h5>Desarrollador fullstack +2 años de experiencia</h5>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/isaacmartindev" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span></a>
+                    <a href="https://github.com/isaurus" target="_blank" rel="noopener noreferrer"><span>GitHub</span></a>
                 </div>
-                <div class="hero-right-container">
-                    <h1 class="hero-title">Isaac Martín</h1>
-                    <h2 class="hero-subtitle">Fullstack Developer</h2>
-                    <p class="hero-description">
-                        Experto en desarrollo de soluciones digitales innovadoras
-                    </p>
-                    <div class="social">
-                        <a href="https://www.linkedin.com/in/isaacmartindev/" target="_blank" rel="noopener noreferrer">
-                            LinkedIn
-                        </a>
-                        <a href="https://github.com/isaurus" target="_blank" rel="noopener noreferrer">
-                            GitHub
-                        </a>
-                    </div>
-                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <h2 class="section-title">EXPERIENCIA</h2>
+        <div class="experience-container">
+            <div class="experience-container-left">
+                <h2>Desarrollador Freelance</h2>
+                <p>2024 - Actualmente</p>
+            </div>
+            <div class="experience-container-right">
+                <h2>Autónomo</h2>
+                <p>
+                    Desarrollo de soluciones web y software a medida para una cartera diversa de clientes.
+                    Responsable de todo el cilo de vida del proyecto, desde la concepción y arquitectura hasta
+                    el despliegue y mantenimiento. Colaboración directa con clientes para traducir requisitos de
+                    negocio en especificaciones técnicas funcionales y arquitecturas eficientes.
+                    Implementación de prácticas CD/CI y despliegue en servicios cloud como AWS, Google Cloud o
+                    Azure para garantizar disponibilidad y rendimiento.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="experience-container">
+            <div class="experience-container-left">
+                <h2>Zento Development</h2>
+                <p>Jun. 2023 - Jun. 2025</p>
+            </div>
+            <div class="experience-container-right">
+                <h2>Desarrollador .NET</h2>
+                <p>
+                    Desarrollo de soluciones digitales para diversos clientes de múltiples industrias, adaptándome a
+                    diferentes herramientas internas. Mis responsabilidades incluyen el modernizado de aplicaciones y
+                    migración de sistemas de .NET Framework 4.5 a arquitectura de microservicios en .NET Core 6 con
+                    Docker. También he liderazo desarrollos desde 0 de nuevas herramientas de facturación, usando
+                    .NET 8, Docker y Angular para la UI.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="experience-container">
+            <div class="experience-container-left">
+                <h2>OGA Data Driven Solutions</h2>
+                <p>Mar. 2023 - Jul. 2023</p>
+            </div>
+            <div class="experience-container-right">
+                <h2>Desarrollador .NET</h2>
+                <p>
+                    Desarrollo de RESTful APIs robustas usando ASP.NET Core, aplicando Arquitectura Limpia,
+                    Domain Driven Design y principios SOLID, junto al desarrollo UI/UX con Angular 17 para
+                    consumir el backend. Mi flujo diario de trabajo incluye control de versiones con Git y GitHub,
+                    operandod bajo metodologías Agile (Scrum).
+                </p>
             </div>
         </div>
     </section>
-    <!-- HERO -->
 
-    <!-- MAIN -->
-    <main>
-        <!-- EXPERIENCE SECTION -->
-        <section id="experience">
-            <h2 class="section-title">Experiencia</h2>
-            <div class="container">
-                <div class="experience-container">
-                    <div class="experience-item">
-                        <div>
-                            <details open>
-                                <summary class="experience-item-title">
-                                    Desarrollador Freelance
-                                    <span class="experience-date">Sep. 2024 - Actualmente</span>
-                                </summary>
-                                <div class="experience-item-description">
-                                    <p>
-                                        Desarrollo del ciclo completo, optimizaciones y
-                                        mantenimiento de soluciones digitales para convertir
-                                        necesidades técnicas en aplicaciones funcionales,
-                                        escalables y fáciles de mantener.
-                                    </p>
-                                </div>
-                                
-                                <div class="tech-stack">
-                                    <p>Stack Tecnológico:</p>
-                                    <div class="tech-stack-items">
-                                        <span>Java</span>
-                                        <span>Spring</span>
-                                        <span>Angular</span>
-                                        <span>PostgreSQL</span>
-                                        <span>Docker</span>
-                                        <span>Git</span>
-                                        <span>GitHub</span>
-                                    </div>
-                                    
-                                </div>
-                            </details>
-                        </div>
-                    </div>
-
-                    <div class="experience-item">
-                    <div>
-                        <details>
-                            <summary class="experience-item-title">
-                                Desarrollador en OGA Data Driven Solutions
-                                <span class="experience-date">Abr. 2025 - Jul. 2025</span>
-                            </summary>
-                            <div class="experience-item-description">
-                                <p>
-                                    Formación en Centros de Trabajo (FCT). Desarrollo de RESTful
-                                    APIs aplicando principios SOLID, Clean Architecture y Domain
-                                    Driven Design. Trabajo colaborativo con control de versiones
-                                    con Git y GitHub y despliegue de aplicaciones en servidores
-                                    Azure.
-                                </p>
-                            </div>
-                            <div class="tech-stack">
-                                <p>Stack Tecnológico:</p>
-                                <div class="tech-stack-items">
-                                    <span>C#</span>
-                                    <span>ASP.NET Core</span>
-                                    <span>SQL Server</span>
-                                    <span>Azure</span>
-                                    <span>Docker</span>
-                                    <span>Git</span>
-                                    <span>GitHub</span>
-                                </div>
-                            </div>
-                        </details>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2 class="section-title">PROYECTOS</h2>
+        <div class="projects-container">
+            <a class="project-card" href="https://github.com/isaurus/ggmanager.frontend.android" target="_blank" rel="noopener noreferrer">
+                <div class="project-container-item">
+                    <h2>GG Manager</h2>
+                    <p>
+                        Aplicación Android. Gestor de equipos de esports profesionales y amateur. Crea equipos,
+                        añade jugadores, establece tareas y metas y haz un seguimiento de tu equipo para
+                        desarrollar al máximo su potencial.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span>Android</span>
+                        <span>Java</span>
                     </div>
                 </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- PROJECTS SECTION -->
-        <section id="projects">
-            <h2 class="section-title">Proyectos</h2>
-            <div class="container">
-                <div class="projects-container">
-                    <div class="project-item">
-                        <div class="project-item-left">
-                            <div class="project-image-wrapper">
-                                <a href="https://alcaria.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./static/alcaria-banner.jpg" alt="" />
-                                </a>
-                                
-                            </div>
-                        </div>
-                        <div class="project-item-right">
-                            <h2 class="project-item-title">Web Alcaria</h2>
-                            <p class="project-item-description">
-                                Desarrollo y mantenimiento de la página web del I.E.S. Alcaria
-                                junto con un dashboard personalizado para gestionar el centro. 
-                            </p>
-                            <div class="tech-stack-items">
-                                <span>Java</span>
-                                <span>Spring</span>
-                                <span>Angular</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-item-left">
-                            <div class="project-image-wrapper">
-                                <a href="https://github.com/isaurus/ggmanager.frontend.android" target="_blank" rel="noopener noreferrer">
-                                    <img src="./static/ic_ggmanager.svg" alt="" />
-                                </a>                             
-                            </div>
-                        </div>
-                        <div class="project-item-right">
-                            <h2 class="project-item-title">GGManager</h2>
-                            <p class="project-item-description">
-                                Aplicación para la gestión de equipos de esports. Proyecto de fin de grado
-                            </p>
-                            <div class="tech-stack-items">
-                                <span>Android</span>
-                                <span>Java</span>
-                            </div>
-                        </div>
+            </a>
+            <a class="project-card" href="https://alcaria.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <div class="project-container-item">
+                    <h2>Alcaria Web</h2>
+                    <p>
+                        Nueva página web para el instituto I.E.S. Alcaria, con una interfaz más accesible y limpia, junto
+                        a un panel de control para la gestión interna del centro.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span>Java</span>
+                        <span>Spring</span>
+                        <span>Angular</span>
                     </div>
                 </div>
-                
-            </div>
-        </section>
-
-        <!-- ABOUT ME SECTION -->
-        <section id="about">
-            <h2 class="section-title">Sobre mí</h2>
-            <div class="container">
-                <div class="about-container">
-                    <div class="about-container-left">
-                        <p>
-                            Me llamo Isaac Martín López. Siempre he sentido mucha curiosidad
-                            por la tecnología y sus infinitas y creativas aplicaciones. Pero
-                            no fue hasta después de ser Psicólogo Deportivo durante más de
-                            cuatro años que me decidí a formarme en este campo.<br><br>
-
-                            Me llamo Isaac Martín López. Siempre he sentido mucha curiosidad
-                            por la tecnología y sus infinitas y creativas aplicaciones. Pero
-                            no fue hasta después de ser Psicólogo Deportivo durante más de
-                            cuatro años que me decidí a formarme en este campo.<br><br>
-
-                            Me llamo Isaac Martín López. Siempre he sentido mucha curiosidad
-                            por la tecnología y sus infinitas y creativas aplicaciones. Pero
-                            no fue hasta después de ser Psicólogo Deportivo durante más de
-                            cuatro años que me decidí a formarme en este campo.
-                        </p>
-                    </div>
-                    <div class="about-container-right">
-                        <div class="about-image-wrapper">
-                            <img src="./static/avatar.jpeg" alt="">
-                        </div>
+            </a>
+            <a class="project-card" href="" target="_blank" rel="noopener noreferrer">
+                <div class="project-container-item">
+                    <h2>Pizza Dinner</h2>
+                    <p>
+                        Aplicación web para gestionar los pedidos de una pizzería. Permite autenticación, buscar y
+                        seleccionar productos, hacer pedidos y pagar con una cartera "virtual".
+                    </p>
+                    <div class="project-tech-stack">
+                        <span>Java</span>
+                        <span>Spring</span>
+                        <span>Angular</span>
                     </div>
                 </div>
-            </div>
-        </section>
+            </a>
+        </div>
+    </section>
 
-        <!-- CONTACT SECTION -->
-        <section id="contact">
-            <div class="container">
-                <h2 class="section-title">Contacto</h2>
-            </div>
-        </section>
-    </main>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2 class="section-title">SOBRE MÍ</h2>
+        <div class="about-container">
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2 class="section-title">CONTACTO</h2>
+        <div class="contact-container">
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
-        <small>© 2025 Isaac Martín. Todos los derechos reservados</small>
+        <small>2025 Isaac Martín</small>
     </footer>
+
+
+    <!-- Script para toggle tema claro/oscuro -->
+    <script>
+        const toggleBtn = document.getElementById("theme-toggle");
+        const html = document.documentElement;
+
+        // 1. Cargar tema guardado
+        if (localStorage.getItem("theme") === "dark") {
+            html.classList.add("dark");
+        }
+
+        // 2. Alternar tema
+        toggleBtn.addEventListener("click", () => {
+            html.classList.toggle("dark");
+
+            // Guardar preferencia
+            if (html.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+            } else {
+            localStorage.setItem("theme", "light");
+            }
+        });
+</script>
 </body>
 
 </html>
